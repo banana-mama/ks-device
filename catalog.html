@@ -14,10 +14,14 @@
 <body>
 
   <header>
-    <a href="/">device</a>
-    <form>
-      <label for="mp-search"></label>
-      <input type="search" name="mp-search" id="mp-search">
+    <a href="/">
+      <img src="img/logo.svg" alt="Логотип интернет-магазина Device" width="163" height="35">
+    </a>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <label>
+        <input type="search" name="mp-search">
+        Поиск по сайту
+      </label>
     </form>
     <ul>
       <li>
@@ -31,40 +35,42 @@
         <a href="#">Корзина</a>
       </li>
     </ul>
-    <p>Каталог товаров</p>
-    <ul>
-      <li>
-        <a href="#">Доставка</a>
-      </li>
-      <li>
-        <a href="#">Гарантия</a>
-      </li>
-      <li>
-        <a href="#">Контакты</a>
-      </li>
-    </ul>
-    <div>
+    <nav>
+      <p>Каталог товаров</p>
       <ul>
         <li>
-          <a href="#">Виртуальная реальность</a>
+          <a href="#">Доставка</a>
         </li>
         <li>
-          <a href="#">Моноподы для селфи</a>
+          <a href="#">Гарантия</a>
         </li>
         <li>
-          <a href="#">Экшн-камеры</a>
-        </li>
-        <li>
-          <a href="#">Фитнес-браслеты</a>
-        </li>
-        <li>
-          <a href="#">Умные часы</a>
-        </li>
-        <li>
-          <a href="#">Квадрокоптеры</a>
+          <a href="#">Контакты</a>
         </li>
       </ul>
-    </div>
+      <div>
+        <ul>
+          <li>
+            <a href="#">Виртуальная реальность</a>
+          </li>
+          <li>
+            <a href="#">Моноподы для селфи</a>
+          </li>
+          <li>
+            <a href="#">Экшн-камеры</a>
+          </li>
+          <li>
+            <a href="#">Фитнес-браслеты</a>
+          </li>
+          <li>
+            <a href="#">Умные часы</a>
+          </li>
+          <li>
+            <a href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <main>
@@ -83,7 +89,65 @@
 
     <section>
       <h2>Фильтр:</h2>
-      <!-- form -->
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <p>
+            <label>
+              <input type="range" name="cost">
+            </label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <p>
+            <label>
+              <input type="checkbox" name="black" checked>
+              Черный
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="white">
+              Белый
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="blue" checked>
+              Синий
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="red" checked>
+              Красный
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="pink">
+              Розовый
+            </label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <p>
+            <label>
+              <input type="radio" name="bluetooth" value="yes" checked>
+              Есть
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" name="bluetooth" value="no">
+              Нет
+            </label>
+          </p>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </section>
 
     <section>
@@ -99,8 +163,8 @@
           <button type="button">По популярности</button>
         </li>
       </ul>
-      <button type="button">up</button>
-      <button type="button">down</button>
+      <button type="button">По возрастанию</button>
+      <button type="button">По убыванию</button>
     </section>
 
     <section>
@@ -151,10 +215,10 @@
           <a href="#">Назад</a>
         </li>
         <li>
-          <a href="#">1</a>
+          <a>1</a>
         </li>
         <li>
-          <a>2</a>
+          <a href="#">2</a>
         </li>
         <li>
           <a href="#">3</a>

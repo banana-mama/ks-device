@@ -15,11 +15,13 @@
 
   <header>
     <a>
-      <img src="img/logo.svg" alt="Device" width="163" height="35">
+      <img src="img/logo.svg" alt="Логотип интернет-магазина Device" width="163" height="35">
     </a>
-    <form>
-      <label for="mp-search"></label>
-      <input type="search" name="mp-search" id="mp-search">
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <label>
+        <input type="search" name="mp-search">
+        Поиск по сайту
+      </label>
     </form>
     <ul>
       <li>
@@ -32,39 +34,41 @@
         <a href="#">Корзина</a>
       </li>
     </ul>
-    <p>Каталог товаров</p>
-    <ul>
-      <li>
-        <a href="#">Доставка</a>
-      </li>
-      <li>
-        <a href="#">Гарантия</a>
-      </li>
-      <li>
-        <a href="#">Контакты</a>
-      </li>
-    </ul>
-    <div>
+    <nav>
+      <p>Каталог товаров</p>
       <ul>
         <li>
-          <a href="#">Виртуальная реальность</a>
+          <a href="#">Доставка</a>
         </li>
         <li>
-          <a href="#">Моноподы для селфи</a>
+          <a href="#">Гарантия</a>
         </li>
         <li>
-          <a href="#">Экшн-камеры</a>
-        </li>
-        <li>
-          <a href="#">Фитнес-браслеты</a>
-        </li>
-        <li>
-          <a href="#">Умные часы</a>
-        </li>
-        <li>
-          <a href="#">Квадрокоптеры</a>
+          <a href="#">Контакты</a>
         </li>
       </ul>
+      <div>
+        <ul>
+          <li>
+            <a href="#">Виртуальная реальность</a>
+          </li>
+          <li>
+            <a href="#">Моноподы для селфи</a>
+          </li>
+          <li>
+            <a href="#">Экшн-камеры</a>
+          </li>
+          <li>
+            <a href="#">Фитнес-браслеты</a>
+          </li>
+          <li>
+            <a href="#">Умные часы</a>
+          </li>
+          <li>
+            <a href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -144,6 +148,17 @@
           </li>
         </ul>
       </div>
+      <ul>
+        <li>
+          <button type="button">Первый слайд</button>
+        </li>
+        <li>
+          <button type="button">Второй слайд</button>
+        </li>
+        <li>
+          <button type="button">Третий слайд</button>
+        </li>
+      </ul>
     </section>
 
     <section>
@@ -234,7 +249,9 @@
     <section>
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <!-- map -->
+      <button>
+        <img src="img/map-preview.png" alt="Наш офис находится по адресу Москва, улица Строителей, дом 15" width="560" height="222">
+      </button>
       <button type="button">Напишите нам</button>
     </section>
 
@@ -276,13 +293,33 @@
 
   <section>
     <h2>Напишите нам</h2>
-    <!-- form -->
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label>
+          Ваше имя:
+          <input type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+      </p>
+      <p>
+        <label>
+          Ваш e-mail:
+          <input type="email" name="email" placeholder="email@example.com">
+        </label>
+      </p>
+      <p>
+        <label>
+          Текст письма:
+          <textarea name="message" placeholder="В свободной форме"></textarea>
+        </label>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
     <button type="button">x</button>
   </section>
 
   <section>
     <h2>Карта</h2>
-    <!-- map -->
+    <img src="img/map-big.png" alt="Наш офис находится по адресу Москва, улица Строителей, дом 15" width="960" height="560">
     <button type="button">x</button>
   </section>
 </body>
