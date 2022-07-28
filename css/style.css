@@ -31,6 +31,17 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button {
   font-family: 'Gilroy', Arial, sans-serif;
   font-weight: 800;
@@ -56,19 +67,23 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .header {
   background-color: #f7e296;
+
+  margin-top: 40px;
+}
+
+.header-wrapper {
+  padding: 0 60px;
+}
+
+.header-row {
+  display: flex;
 }
 
 .search-button {
@@ -90,6 +105,10 @@ a {
   color: #5a5a5a;
   color: rgba(255, 255, 255, 0.3);
   background-color: #000000;
+}
+
+.search-form {
+  width: 540px;
 }
 
 .search-form input {
@@ -119,8 +138,26 @@ a {
   color: #000000;
 }
 
+.site-nav,
+.services-nav {
+  padding: 0;
+  width: 500px;
+}
+
+.site-nav li:first-child {
+  margin-right: auto;
+}
+
+.services-nav li:last-child {
+  margin-left: auto;
+}
+
 .site-nav-logout {
   opacity: 0.6;
+}
+
+.catalog-opener-wrapper {
+  width: 540px;
 }
 
 .catalog-opener {
@@ -155,6 +192,18 @@ a {
   opacity: 0.3;
 }
 
+.slide-wrapper {
+  display: flex;
+}
+
+.slide-photo {
+  width: 600px;
+}
+
+.slide-desc {
+  flex-grow: 1;
+}
+
 .slider h3 {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 47px;
@@ -177,6 +226,10 @@ a {
 .slide-properties {
   font-size: 13px;
   line-height: 20px;
+
+  display: flex;
+
+  padding-left: 0;
 }
 
 .slide-properties span{
