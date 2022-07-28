@@ -148,7 +148,7 @@ a {
   margin-right: auto;
 }
 
-.services-nav li:last-child {
+.header .services-nav li:last-child {
   margin-left: auto;
 }
 
@@ -251,13 +251,31 @@ a {
   color: #000000;
 }
 
+.services {
+  background-color: #e5e5e5;
+}
+
+.services-wrapper {
+  display: flex;
+}
+
 .services-switcher {
   list-style: none;
+  width: 280px;
+  padding-left: 0;
 }
 
 .services-button:active {
   color: #f7e184;
   background-color: #000000;
+}
+
+.services-desc p {
+  width: 460px;
+}
+
+.services-desc {
+  width: 880px;
 }
 
 .services h3 {
@@ -267,8 +285,22 @@ a {
   line-height: 48px;
 }
 
+.partners-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .partners ul {
   list-style: none;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us {
+  width: 480px;
 }
 
 .about-us h2 {
@@ -285,6 +317,10 @@ a {
   line-height: 24px;
 }
 
+.contacts {
+  width: 560px;
+}
+
 .contacts h2 {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
@@ -292,9 +328,20 @@ a {
   line-height: 48px;
 }
 
+.contacts-map {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
 .footer {
   color: #ffffff;
   background-color: #464646;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer ul {
@@ -325,6 +372,10 @@ a {
 
 .footer-site-nav a:active {
   opacity: 0.3;
+}
+
+.socials {
+  width: 660px;
 }
 
 .socials a {
@@ -441,6 +492,15 @@ a {
   opacity: 0.3;
 }
 
+.catalog-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter {
+  width: 200px;
+}
+
 .filter h2,
 .sort h2 {
   font-family: 'Gilroy', 'Arial', sans-serif;
@@ -488,6 +548,10 @@ a {
   opacity: 0.3;
 }
 
+.catalog-main {
+  width: 760px;
+}
+
 .sort ul {
   list-style: none;
 }
@@ -516,6 +580,15 @@ a {
 
 .sort button:active {
   opacity: 1;
+}
+
+.products-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-item {
+  width: 360px;
 }
 
 .products-item-name {
@@ -567,8 +640,9 @@ a {
 }
 
 .pagination {
-  list-style: none;
   background-color: #ebebeb;
+  display: flex;
+  justify-content: space-between;
 }
 
 .pagination a {

@@ -57,28 +57,28 @@
         </ul>
       </nav>
 
-        <div>
-          <ul class="catalog-list">
-            <li>
-              <a href="#">Виртуальная реальность</a>
-            </li>
-            <li>
-              <a href="#">Моноподы для селфи</a>
-            </li>
-            <li>
-              <a href="#">Экшн-камеры</a>
-            </li>
-            <li>
-              <a href="#">Фитнес-браслеты</a>
-            </li>
-            <li>
-              <a href="#">Умные часы</a>
-            </li>
-            <li>
-              <a href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </div>
+      <div>
+        <ul class="catalog-list">
+          <li>
+            <a href="#">Виртуальная реальность</a>
+          </li>
+          <li>
+            <a href="#">Моноподы для селфи</a>
+          </li>
+          <li>
+            <a href="#">Экшн-камеры</a>
+          </li>
+          <li>
+            <a href="#">Фитнес-браслеты</a>
+          </li>
+          <li>
+            <a href="#">Умные часы</a>
+          </li>
+          <li>
+            <a href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </div>
 
     </div>
   </header>
@@ -216,34 +216,38 @@
 
     <section class="services">
       <h2 class="visually-hidden">Услуги</h2>
-      <ul class="services-switcher">
-        <li>
-          <button class="button services-button" type="button">Доставка</button>
-        </li>
-        <li>
-          <button class="button services-button" type="button">Гарантия</button>
-        </li>
-        <li>
-          <button class="button services-button" type="button">Кредит</button>
-        </li>
-      </ul>
-      <div>
-        <h3>Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-      </div>
-      <div>
-        <h3>Гарантия</h3>
-        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-      </div>
-      <div>
-        <h3>Кредит</h3>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+      <div class="services-wrapper container">
+        <ul class="services-switcher">
+          <li>
+            <button class="button services-button" type="button">Доставка</button>
+          </li>
+          <li>
+            <button class="button services-button" type="button">Гарантия</button>
+          </li>
+          <li>
+            <button class="button services-button" type="button">Кредит</button>
+          </li>
+        </ul>
+        <div class="services-desc">
+          <div>
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <div>
+            <h3>Гарантия</h3>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          </div>
+          <div>
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="partners">
+    <section class="partners container">
       <h2 class="visually-hidden">Партнеры</h2>
-      <ul>
+      <ul class="partners-list">
         <li>
           <img src="img/logo-1-grey.png" alt="dji" width="260" height="100">
           <img src="img/logo-1.png" alt="dji" width="260" height="100">
@@ -263,63 +267,81 @@
       </ul>
     </section>
 
-    <section class="about-us">
-      <h2>О нас</h2>
-      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-      <ul>
-        <li>Деловые линии</li>
-        <li>Автотрейдинг</li>
-        <li>ЖелДорЭкспедиция</li>        
-      </ul>
-      <a class="button" href="#">Подробнее о нас</a>
-    </section>
+    <div class="about-wrapper container">
 
-    <section class="contacts">
-      <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <button>
-        <img src="img/map-preview.png" alt="Наш офис находится по адресу Москва, улица Строителей, дом 15" width="560" height="222">
-      </button>
-      <button class="button" type="button">Напишите нам</button>
-    </section>
+      <section class="about-us">
+        <h2>О нас</h2>
+        <p>
+          Огромный выбор гаджетов не оставит равнодушным гика,<br>
+          который есть в каждом из нас.
+        </p>
+        <p>
+          Мы можем доставить ваш товар в самые отдаленные точки<br>
+          России! DEVICE работает со многими транспортными компаниями:
+        </p>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>        
+        </ul>
+        <a class="button" href="#">Подробнее о нас</a>
+      </section>
+
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <button class="contacts-map">
+          <img src="img/map-preview.png" alt="Наш офис находится по адресу Москва, улица Строителей, дом 15" width="560" height="222">
+        </button>
+        <button class="button" type="button">Напишите нам</button>
+      </section>
+
+    </div>
 
   </main>
 
   <footer class="footer">
-    <a href="#">
-      <img src="img/logo-yellow.svg" alt="Device" width="163" height="35">
-    </a>
-    <ul class="footer-site-nav">
-      <li>
-        <a href="#">Войти</a>
-      </li>
-      <li>
-        <a href="#">Сравнить</a>
-      </li>
-      <li>
-        <a href="#">Корзина</a>
-      </li>
-    </ul>
-    <p>г. Москва, ул. Строителей, 15</p>
-    <ul class="services-nav">
-      <li>
-        <a href="#">Доставка</a>
-      </li>
-      <li>
-        <a href="#">Гарантия</a>
-      </li>
-      <li>
-        <a href="#">Контакты</a>
-      </li>
-    </ul>
-    <p>Тел.: +7 (495) 495-95-95</p>
-    <ul class="socials">
-      <li><a href="#">fb</a></li>
-      <li><a href="#">insta</a></li>
-      <li><a href="#">tw</a></li>
-    </ul>
-    <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">html academy</a>    
+    <div class="container">
+      <div class="footer-row">
+        <a href="#">
+          <img src="img/logo-yellow.svg" alt="Device" width="163" height="35">
+        </a>
+        <ul class="footer-site-nav footer-row">
+          <li>
+            <a href="#">Войти</a>
+          </li>
+          <li>
+            <a href="#">Сравнить</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-row">
+        <p>г. Москва, ул. Строителей, 15</p>
+        <ul class="services-nav footer-row">
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <p>Тел.: +7 (495) 495-95-95</p>
+      </div>
+      <div class="footer-row">
+        <ul class="socials">
+          <li><a href="#">fb</a></li>
+          <li><a href="#">insta</a></li>
+          <li><a href="#">tw</a></li>
+        </ul>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">html academy</a>    
+      </div>
+    </div>
   </footer>
 
   <section class="contact-us">
