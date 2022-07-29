@@ -337,6 +337,7 @@ a {
 .footer {
   color: #ffffff;
   background-color: #464646;
+  margin-top: 77px;
 }
 
 .footer-row {
@@ -582,15 +583,6 @@ a {
   opacity: 1;
 }
 
-.products-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.products-item {
-  width: 360px;
-}
-
 .products-item-name {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
@@ -676,3 +668,15 @@ a {
 .pagination-page a:active {
   opacity: 1;
 }
+
+
+
+
+.products-view {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 40px;
+
+}
+
