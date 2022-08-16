@@ -413,6 +413,7 @@ button {
   position: absolute;
   left: 0;
   bottom: 0;
+  z-index: 2;
 
   /*display: flex;*/
   display: none;
@@ -555,6 +556,10 @@ button {
   border: 1px solid #000000;
 }
 
+.categories {
+  margin-bottom: 62px;
+}
+
 .categories-list {
   display: flex;
   justify-content: space-between;
@@ -637,6 +642,7 @@ button {
 
 .services {
   position: relative;
+  margin-bottom: 90px;
 }
 
 .services-bg {
@@ -647,7 +653,7 @@ button {
   right: 0;
   z-index: 1;
 
-  margin-top: 50px;
+  margin-top: 100px;
 
   background-color: #e5e5e5;
 }
@@ -655,23 +661,82 @@ button {
 .services-wrapper {
   position: relative;
   z-index: 2;
+
   display: flex;
+  padding-bottom: 75px;
 }
 
 .services-switcher {
-  width: 280px;
+  width: 285px;
   padding-left: 0;
+  margin-top: 0;
 
+  border-right: 8px solid #000000;
+}
+
+.services-switcher ul {
+  margin-bottom: 0;
+  margin-top: 80px;
+  padding: 0;
   list-style: none;
 }
 
-.services-button:active {
+.services-button{
+  width: fit-content;
+  margin-bottom: 25px;
+}
+
+.services-button .button {
+  padding: 0;
+  width: 160px;
+}
+
+.services-button .button:active,
+.services-button.active .button{
   color: #f7e184;
+  padding-right: 116px;
+  box-sizing: content-box;
+}
+
+.services-button .button:active ~ .button-bg,
+.services-button.active .button-bg {
   background-color: #000000;
+  margin: 0;
+}
+
+.services-desc {
+  margin-left: 115px;
+}
+
+.services-desc-item {
+  padding-bottom: 60px;
+}
+
+.services-desc-item-delivery {
+  background-image: url("../img/delivery.svg");
+  background-repeat: no-repeat;
+  background-position: 559px 11px;
+}
+
+.services-desc-item-warranty {
+  background-image: url("../img/warranty.svg");
+  background-repeat: no-repeat;
+  background-position: 559px 11px;
+}
+
+.services-desc-item-credit {
+  background-image: url("../img/credit.svg");
+  background-repeat: no-repeat;
+  background-position: 559px 11px;
+}
+
+.services-desc h3 {
+  margin-top: 73px;
+  margin-bottom: 30px;
 }
 
 .services-desc p {
-  width: 460px;
+  width: 450px;
 }
 
 .services-desc {
@@ -688,9 +753,9 @@ button {
 .partners-list {
   display: flex;
   justify-content: space-between;
-}
+  padding: 0;
+  margin: 0;
 
-.partners ul {
   list-style: none;
 }
 

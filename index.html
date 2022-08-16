@@ -187,7 +187,7 @@
       </div>
     </section>
 
-    <section class="container">
+    <section class="categories container">
       <h2 class="visually-hidden">Категории товаров</h2>
       <div class="categories-list">
         <a href="#">
@@ -221,27 +221,32 @@
       <h2 class="visually-hidden">Услуги</h2>
       <div class="services-bg"></div>
       <div class="services-wrapper container">
-        <ul class="services-switcher">
-          <li>
-            <button class="button services-button" type="button">Доставка</button>
-          </li>
-          <li>
-            <button class="button services-button" type="button">Гарантия</button>
-          </li>
-          <li>
-            <button class="button services-button" type="button">Кредит</button>
-          </li>
-        </ul>
+        <div class="services-switcher">
+          <ul>
+            <li class="button-wrapper services-button active">
+              <button class="button" type="button">Доставка</button>
+              <span class="button-bg"></span>
+            </li>
+            <li class="button-wrapper services-button">
+              <button class="button" type="button">Гарантия</button>
+              <span class="button-bg"></span>
+            </li>
+            <li class="button-wrapper services-button">
+              <button class="button" type="button">Кредит</button>
+              <span class="button-bg"></span>
+            </li>
+          </ul>
+        </div>
         <div class="services-desc">
-          <div>
+          <div class="services-desc-item services-desc-item-delivery">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
-          <div>
+          <div class="services-desc-item services-desc-item-warranty" style="display: none">
             <h3>Гарантия</h3>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </div>
-          <div>
+          <div class="services-desc-item services-desc-item-credit" style="display: none">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </div>
