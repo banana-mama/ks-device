@@ -17,7 +17,7 @@
 
 <body>
 
-  <header class="header container">
+  <header class="header header-index container">
     <a class="header-logo">
       <img src="img/logo.svg" alt="Логотип интернет-магазина Device" width="163" height="35">
     </a>
@@ -257,20 +257,16 @@
     <section class="partners container">
       <h2 class="visually-hidden">Партнеры</h2>
       <ul class="partners-list">
-        <li>
-          <img src="img/logo-1-grey.png" alt="dji" width="260" height="100">
+        <li class="partners-list-item">
           <img src="img/logo-1.png" alt="dji" width="260" height="100">
         </li>
-        <li>
-          <img src="img/logo-2-grey.png" alt="spgadgets" width="260" height="100">
+        <li class="partners-list-item">
           <img src="img/logo-2.png" alt="spgadgets" width="260" height="100">
         </li>
-        <li>
-          <img src="img/logo-3-grey.png" alt="gopro" width="260" height="100">
+        <li class="partners-list-item">
           <img src="img/logo-3.png" alt="gopro" width="260" height="100">
         </li>
-        <li>
-          <img src="img/logo-4-grey.png" alt="vive" width="260" height="100">
+        <li class="partners-list-item">
           <img src="img/logo-4.png" alt="vive" width="260" height="100">
         </li>
       </ul>
@@ -289,20 +285,28 @@
           России! DEVICE работает со многими транспортными компаниями:
         </p>
         <ul>
-          <li>Деловые линии</li>
+          <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>        
         </ul>
-        <a class="button" href="#">Подробнее о нас</a>
+        <div class="button-wrapper">
+          <a class="button" href="#">Подробнее о нас</a>
+          <span class="button-bg"></span>
+        </div>
       </section>
 
       <section class="contacts">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <button class="contacts-map">
-          <img src="img/map-preview.png" alt="Наш офис находится по адресу Москва, улица Строителей, дом 15" width="560" height="222">
-        </button>
-        <button class="button" type="button">Напишите нам</button>
+        <div class="contacts-top-wrapper">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <button class="contacts-map">
+            <img src="img/map-preview.png" alt="Наш офис находится по адресу Москва, улица Строителей, дом 15" width="560" height="222">
+          </button>
+        </div>
+        <div class="button-wrapper">
+          <button class="button" type="button">Напишите нам</button>
+          <span class="button-bg"></span>
+        </div>
       </section>
 
     </div>
@@ -315,14 +319,14 @@
         <a href="#">
           <img src="img/logo-yellow.svg" alt="Device" width="163" height="35">
         </a>
-        <ul class="footer-site-nav footer-row">
-          <li>
+        <ul class="site-nav footer-site-nav footer-row">
+          <li class="site-nav-login">
             <a href="#">Войти</a>
           </li>
-          <li>
+          <li class="site-nav-compare">
             <a href="#">Сравнить</a>
           </li>
-          <li>
+          <li class="site-nav-cart">
             <a href="#">Корзина</a>
           </li>
         </ul>
@@ -343,17 +347,18 @@
         <p>Тел.: +7 (495) 495-95-95</p>
       </div>
       <div class="footer-row">
+        <div class="footer-bar"></div>
         <ul class="socials">
-          <li><a href="#">fb</a></li>
-          <li><a href="#">insta</a></li>
-          <li><a href="#">tw</a></li>
+          <li class="socials-fb"><a href="#" aria-label="Facebook"></a></li>
+          <li class="socials-vk"><a href="#" aria-label="Instagram"></a></li>
+          <li class="socials-tw"><a href="#" aria-label="Tweeter"></a></li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">html academy</a>    
+        <a class="socials-html" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="html academy"></a>
       </div>
     </div>
   </footer>
 
-  <section class="contact-us">
+  <section class="contact-us" style="display: none">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
       <p>
@@ -379,7 +384,7 @@
     <button class="close-button" type="button">Закрыть</button>
   </section>
 
-  <section>
+  <section style="display: none">
     <h2>Карта</h2>
     <img src="img/map-big.png" alt="Наш офис находится по адресу Москва, улица Строителей, дом 15" width="960" height="560">
     <button class="close-button" type="button">Закрыть</button>
