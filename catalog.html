@@ -128,82 +128,82 @@
               <div class="filter-section">
                 <fieldset>
                   <legend>Стоимость</legend>
-
-
-
-
                   <div class="double-range-input">
                     <div class="double-range-input-slider">
                         <div class="slider-track"></div>
-                        <input type="range" min="0" max="10000" value="0" id="slider-1" oninput="slideOne()">
-                        <input type="range" min="0" max="10000" value="5000" id="slider-2" oninput="slideTwo()">
+                        <input type="range" min="0" max="10000" value="0" id="slider-1" name="cost-from" oninput="slideOne()">
+                        <input type="range" min="0" max="10000" value="5000" id="slider-2" name="cost-to" oninput="slideTwo()">
                     </div>
                     <div class="double-range-input-values">
                         <span id="range1">от 0</span>
                         <span id="range2">до 10000</span>
                     </div>
                 </div>
-
-
-
-
-
-
                 </fieldset>
               </div>
-              <div class="filter-section">
+              <div class="filter-section filter-section-color">
                 <fieldset>
                   <legend>Цвет</legend>
                   <p>
-                    <label class="filter-label-disabled">
+                    <label class="checkbox checkbox-disabled">
                       <input type="checkbox" name="black" checked disabled>
-                      Черный
+                      <span class="checkbox-marker"></span>
+                      <span class="checkbox-label">Черный</span>
                     </label>
                   </p>
                   <p>
-                    <label>
+                    <label class="checkbox">
                       <input type="checkbox" name="white">
-                      Белый
+                      <span class="checkbox-marker"></span>
+                      <span class="checkbox-label">Белый</span>
                     </label>
                   </p>
                   <p>
-                    <label>
+                    <label class="checkbox">
                       <input type="checkbox" name="blue" checked>
-                      Синий
+                      <span class="checkbox-marker"></span>
+                      <span class="checkbox-label">Синий</span>
                     </label>
                   </p>
                   <p>
-                    <label>
+                    <label class="checkbox">
                       <input type="checkbox" name="red" checked>
-                      Красный
+                      <span class="checkbox-marker"></span>
+                      <span class="checkbox-label">Красный</span>
                     </label>
                   </p>
                   <p>
-                    <label>
+                    <label class="checkbox">
                       <input type="checkbox" name="pink">
-                      Розовый
+                      <span class="checkbox-marker"></span>
+                      <span class="checkbox-label">Розовый</span>
                     </label>
                   </p>
                 </fieldset>
               </div>
-              <div class="filter-section">
+              <div class="filter-section filter-section-bluetooth">
                 <fieldset>
                   <legend>Bluetooth</legend>
                   <p>
-                    <label>
+                    <label class="radiobutton">
                       <input type="radio" name="bluetooth" value="yes" checked>
-                      Есть
+                      <span class="radiobutton-marker"></span>
+                      <span class="radiobutton-label">Есть</span>
                     </label>
                   </p>
                   <p>
-                    <label>
-                      <input type="radio" name="bluetooth" value="no">
-                      Нет
+                    <label class="radiobutton radiobutton-disabled">
+                      <input type="radio" name="bluetooth" value="no" disabled>
+                      <span class="radiobutton-marker"></span>
+                      <span class="radiobutton-label">Нет</span>
                     </label>
                   </p>
                 </fieldset>
               </div>
-              <button class="button" type="submit">Показать</button>
+              <div class="button-wrapper">
+                <button class="button" type="submit">Показать</button>
+                <span class="button-bg"></span>
+              </div>
             </form>
           </section>
         </div>
