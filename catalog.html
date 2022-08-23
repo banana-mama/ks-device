@@ -215,36 +215,72 @@
             <div class="products-view">
 
               <div class="products-item">
-                <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
-                <p class="products-item-new">new</p>
-                <a class="products-item-name" href="#">Любительская селфи-палка</a>
-                <p class="products-item-cost">500 руб.</p>
-                <button class="button" type="button">В корзину</button>
-                <button class="products-item-compare" type="button">Добавить к сравнению</button>
+                <div class="products-item-img-wrapper">
+                  <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                  <div class="products-item-img-overlay">
+                    <div class="button-wrapper">
+                      <button class="button" type="button">В корзину</button>
+                      <span class="button-bg"></span>
+                    </div>
+                    <button class="products-item-compare" type="button">Добавить к сравнению</button>
+                  </div>
+                </div>
+                <div class="products-item-about-wrapper">
+                  <a class="products-item-name" href="#">Любительская селфи-палка</a>
+                  <p class="products-item-cost">500 руб.</p>
+                </div>
               </div>
 
               <div class="products-item">
-                <img src="img/item-2.jpg" alt="Любительская селфи-палка" width="360" height="380">
-                <a class="products-item-name">Профессиональная селфи-палка</a>
-                <p class="products-item-cost">1 500 руб.</p>
-                <button class="button" type="button">В корзину</button>
-                <button class="products-item-compare" type="button">Добавить к сравнению</button>
+                <div class="products-item-img-wrapper">
+                  <img src="img/item-2.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                  <div class="products-item-img-overlay">
+                    <div class="button-wrapper">
+                      <button class="button" type="button">В корзину</button>
+                      <span class="button-bg"></span>
+                    </div>
+                    <button class="products-item-compare" type="button">Добавить к сравнению</button>
+                  </div>
+                </div>
+                <div class="products-item-about-wrapper">
+                  <a class="products-item-name">Профессиональная<br>селфи-палка</a>
+                  <p class="products-item-cost">1 500 руб.</p>
+                </div>
               </div>
 
               <div class="products-item">
-                <img src="img/item-3.jpg" alt="Любительская селфи-палка" width="360" height="380">
-                <a class="products-item-name">Непотопляемая селфи-палка</a>
-                <p class="products-item-cost">2 500 руб.</p>
-                <button class="button" type="button">В корзину</button>
-                <button class="products-item-compare" type="button">Добавить к сравнению</button>
+                <div class="products-item-img-wrapper">
+                  <img src="img/item-3.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                  <div class="products-item-img-overlay">
+                    <div class="button-wrapper">
+                      <button class="button" type="button">В корзину</button>
+                      <span class="button-bg"></span>
+                    </div>
+                    <button class="products-item-compare" type="button">Добавить к сравнению</button>
+                  </div>
+                </div>
+                <div class="products-item-about-wrapper">
+                  <a class="products-item-name">Непотопляемая селфи-палка</a>
+                  <p class="products-item-cost">2 500 руб.</p>
+                </div>
               </div>
 
               <div class="products-item">
-                <img src="img/item-4.jpg" alt="Любительская селфи-палка" width="360" height="380">
-                <a class="products-item-name">Селфи-палка «Следуй за мной»</a>
-                <p class="products-item-cost">4 900 руб.</p>
-                <button class="button" type="button">В корзину</button>
-                <button class="products-item-compare" type="button">Добавить к сравнению</button>
+                <div class="products-item-img-wrapper">
+                  <img src="img/item-4.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                  <span class="products-item-new">new</span>
+                  <div class="products-item-img-overlay">
+                    <div class="button-wrapper">
+                      <button class="button" type="button">В корзину</button>
+                      <span class="button-bg"></span>
+                    </div>
+                    <button class="products-item-compare" type="button">Добавить к сравнению</button>
+                  </div>
+                </div>
+                <div class="products-item-about-wrapper">
+                  <a class="products-item-name">Селфи-палка «Следуй за мной»</a>
+                  <p class="products-item-cost">4 900 руб.</p>
+                </div>
               </div>
 
             </div>
@@ -274,14 +310,16 @@
         <a href="#">
           <img src="img/logo-yellow.svg" alt="Device" width="163" height="35">
         </a>
-        <ul class="footer-site-nav footer-row">
-          <li>
-            <a href="#">Войти</a>
+        <ul class="site-nav footer-site-nav footer-row">
+
+          <li class="site-nav-user site-nav-login">
+            <a href="#">Валентин Петухов</a>
+            <a class="site-nav-logout" href="#">Выйти</a>
           </li>
-          <li>
+          <li class="site-nav-compare">
             <a href="#">Сравнить</a>
           </li>
-          <li>
+          <li class="site-nav-cart">
             <a href="#">Корзина</a>
           </li>
         </ul>
@@ -302,16 +340,16 @@
         <p>Тел.: +7 (495) 495-95-95</p>
       </div>
       <div class="footer-row">
+        <div class="footer-bar"></div>
         <ul class="socials">
-          <li><a href="#">fb</a></li>
-          <li><a href="#">insta</a></li>
-          <li><a href="#">tw</a></li>
+          <li class="socials-fb"><a href="#" aria-label="Facebook"></a></li>
+          <li class="socials-vk"><a href="#" aria-label="Instagram"></a></li>
+          <li class="socials-tw"><a href="#" aria-label="Tweeter"></a></li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">html academy</a>    
+        <a class="socials-html" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="html academy"></a>
       </div>
     </div>
   </footer>
-
   <script src="scripts/double-slider.js"></script>
 </body>
 </html>

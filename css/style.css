@@ -887,6 +887,10 @@ button {
   opacity: 0.3;
 }
 
+.footer-site-nav .site-nav-user {
+  margin-left: 0;
+}
+
 .footer-site-nav a {
   opacity: 0.7;
 }
@@ -1283,24 +1287,30 @@ button {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   grid-gap: 40px;
+
+  margin-top: 70px;
+  margin-bottom: 30px;
 }
 
-.products-item-name {
-  font-family: 'Gilroy', 'Arial', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
+.products-item {
+  position: relative;
 }
 
-.products-item-cost {
-  font-family: 'Gilroy', 'Arial', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+.products-item-img-wrapper {
+  position: relative;
+  margin-bottom: 23px;
 }
 
 .products-item-new {
+  position: absolute;
+  top: 30px;
+  right: 27px;
+
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding-top: 16px;
+
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 14px;
@@ -1309,11 +1319,27 @@ button {
   opacity: 0.2;
 
   border: 2px solid;
+  border-radius: 50%;
+  text-align: center;
 }
 
-.products-item:hover,
-.products-item:focus {
-  opacity: 0.7;
+.products-item-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.products-item-img-wrapper:hover > .products-item-img-overlay {
+  display: flex;
 }
 
 .products-item-compare {
@@ -1335,9 +1361,40 @@ button {
   opacity: 0.2;
 }
 
+.products-item-about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.products-item-name {
+  display: block;
+  width: 260px;
+
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.products-item-cost {
+  margin: 0;
+
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .pagination {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 30px;
+  margin-bottom: 80px;
 
   background-color: #ebebeb;
 }
@@ -1359,6 +1416,12 @@ button {
 .pagination-switch a:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d9d9d9;
+}
+
+.pagination-page {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .pagination-page a {
