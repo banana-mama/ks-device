@@ -287,7 +287,7 @@
         <ul>
           <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>        
+          <li>ЖелДорЭкспедиция</li>
         </ul>
         <div class="button-wrapper">
           <a class="button" href="#">Подробнее о нас</a>
@@ -358,36 +358,42 @@
     </div>
   </footer>
 
-  <section class="contact-us" style="display: none">
+  <section class="pop-up pop-up-contact">
     <h2 class="visually-hidden">Напишите нам</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label>
-          Ваше имя:
-          <input type="text" name="name" placeholder="Имя Фамилия">
-        </label>
+    <form class="pop-up-contact-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="pop-up-contact-form-name">
+        <label>Ваше имя:<br></label>
+        <input type="text" name="name" placeholder="Имя Фамилия">
       </p>
-      <p>
-        <label>
-          Ваш e-mail:
-          <input type="email" name="email" placeholder="email@example.com">
-        </label>
+      <p class="pop-up-contact-form-email">
+        <label>Ваш e-mail:<br></label>
+        <input type="email" name="email" placeholder="email@example.com">
       </p>
-      <p>
-        <label>
-          Текст письма:
-          <textarea name="message" placeholder="В свободной форме"></textarea>
-        </label>
+      <p class="pop-up-contact-form-message">
+        <label>Текст письма:<br></label>
+        <textarea name="message" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="button" type="submit">Отправить</button>
+      <div class="button-wrapper">
+        <button class="button" type="submit">Отправить</button>
+        <span class="button-bg"></span>
+      </div>
     </form>
-    <button class="close-button" type="button">Закрыть</button>
+    <button class="close-button" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </section>
 
-  <section style="display: none">
-    <h2>Карта</h2>
+  <section class="pop-up pop-up-map">
+    <h2 class="visually-hidden">Карта</h2>
     <img src="img/map-big.png" alt="Наш офис находится по адресу Москва, улица Строителей, дом 15" width="960" height="560">
-    <button class="close-button" type="button">Закрыть</button>
+    <div class="map-ya">
+      <a class="map-ya-link1" href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps">Москва</a>
+      <a class="map-ya-link2" href="https://yandex.ru/maps/213/moscow/house/ulitsa_stroiteley_15/Z04YcwVpT0ADQFtvfXp5d3VrYQ==/?ll=37.529786%2C55.686348&utm_medium=mapframe&utm_source=maps&z=16.65">Улица Строителей, 15 — Яндекс Карты</a>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCURzOsThB" width="560" height="222" frameborder="1" allowfullscreen="true"></iframe>
+    </div>
+    <button class="close-button" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </section>
 
 </body>
