@@ -14,6 +14,19 @@
        url('../fonts/gilroyextrabold.woff') format('woff');
 }
 
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(-2000px); }
+  70% { transform: translateY(30px); }
+  90% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -483,17 +496,21 @@ img {
   top: 168px;
   z-index: 2;
 
-  /*display: flex;*/
   display: none;
   padding-left: 60px;
-  height: 130px;
+  height: 129px;
   gap: 70px;
 
   background-color: #f7e296;
 }
 
+.header-catalog-show {
+  display: flex;
+}
+
 .header-catalog-item {
   display: block;
+  width: fit-content;
 }
 
 .slider {
@@ -504,8 +521,12 @@ img {
 }
 
 .slide-wrapper {
-  display: flex;
+  display: none;
   min-height: 507px;
+}
+
+.slide-show {
+  display: flex;
 }
 
 .slide-photo {
@@ -803,6 +824,11 @@ img {
 
 .services-desc-item {
   padding-bottom: 60px;
+  display: none;
+}
+
+.services-desc-item-show {
+  display: block;
 }
 
 .services-desc-item-delivery {
@@ -1216,14 +1242,12 @@ img {
 }
 
 .pop-up-map {
-  display: block;
   margin-left: -480px;
 }
 
 .map-ya {
   position:relative;
 
-  display: none;
   height: 560px;
 
   overflow:hidden;
@@ -1247,6 +1271,17 @@ img {
 
   width: 960px;
   height: 560px;
+}
+
+.pop-up-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
+.pop-up-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
 
 .main-title {
@@ -1408,10 +1443,12 @@ img {
 
 .sort-order-ascending {
   background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
 }
 
 .sort-order-descending {
   background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
 }
 
 .sort button:hover,
@@ -1508,6 +1545,7 @@ input[type="range"]{
   margin: auto;
   top: 0;
   bottom: 0;
+  background: #dbdbdb;
 }
 
 input[type="range"]::-webkit-slider-runnable-track{
@@ -1538,6 +1576,7 @@ input[type="range"]::-moz-range-thumb{
   cursor: pointer;
   background-image: url("../img/filter-button.svg");
   pointer-events: auto;
+  border: none;
 }
 input[type="range"]::-ms-thumb{
   appearance: none;
@@ -1548,7 +1587,8 @@ input[type="range"]::-ms-thumb{
   pointer-events: auto;
 }
 
-input[type="range"]:active::-webkit-slider-thumb{
+input[type="range"]:active::-webkit-slider-thumb,
+input[type="range"]:active::-moz-range-thumb {
   width: 22px;
   height: 24px;
   margin-top: -10px;
@@ -1582,13 +1622,32 @@ input[type="range"]:focus {
 }
 
 .products-view {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 40px 1fr;
   grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto 40px auto;
   grid-template-rows: auto auto;
   grid-gap: 40px;
 
   margin-top: 70px;
   margin-bottom: 30px;
+}
+.products-view > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.products-view > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.products-view > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.products-view > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
 }
 
 .products-item {
@@ -1692,10 +1751,20 @@ input[type="range"]:focus {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  padding: 0 30px;
+  /*padding: 0 30px;*/
   margin-bottom: 80px;
 
   background-color: #ebebeb;
+}
+
+.pagination-switch {
+  height: 100%;
+}
+
+.pagination-switch a {
+  display: block;
+  padding: 23px 30px 0;
+  height: 100%;
 }
 
 .pagination a {
@@ -1719,14 +1788,19 @@ input[type="range"]:focus {
 
 .pagination-page {
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 5px 30px;
   max-width: 300px;
 }
 
 .pagination-page a {
   opacity: 0.3;
+  margin: 3px 30px 3px 0;
+}
+
+.pagination-page a:last-child {
+  margin-right: 0;
 }
 
 .pagination-page a:hover,
@@ -1734,6 +1808,7 @@ input[type="range"]:focus {
   opacity: 0.6;
 }
 
-.pagination-page a:active {
+.pagination-page a:active,
+.pagination-page a.active {
   opacity: 1;
 }

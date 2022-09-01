@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize-min.css">
+  <link rel="stylesheet" type="text/css" href="css/style-min.css">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
     </a>
     <div class="header-row">
       <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-        <input id="site-search" type="text" name="site-search" placeholder="Поиск по сайту">
+        <input id="site-search" type="text" name="site-search" placeholder="Поиск по сайту" autocomplete="off">
         <label class="visually-hidden" for="site-search">Поиск по сайту</label>
         <button class="search-button" type="submit">Найти</button>
       </form>
@@ -46,29 +46,29 @@
       </div>
       <ul class="services-nav header-row">
         <li class="services-nav-delivery">
-          <a href="#">Доставка</a>
+          <a href="#services">Доставка</a>
         </li>
         <li class="services-nav-warranty">
-          <a href="#">Гарантия</a>
+          <a href="#services">Гарантия</a>
         </li>
         <li class="services-nav-contacts">
-          <a href="#">Контакты</a>
+          <a href="#contacts">Контакты</a>
         </li>
       </ul>
     </nav>
 
     <div class="header-catalog container">
       <div class="header-catalog-col">
-        <a class="header-catalog-item" href="#">Виртуальная реальность</a>
-        <a class="header-catalog-item"  href="#">Моноподы для селфи</a>
-        <a class="header-catalog-item"  href="#">Экшн-камеры</a>
+        <a class="header-catalog-item" href="/catalog.html">Виртуальная реальность</a>
+        <a class="header-catalog-item" href="/catalog.html">Моноподы для селфи</a>
+        <a class="header-catalog-item" href="/catalog.html">Экшн-камеры</a>
       </div>
       <div class="header-catalog-col">
-        <a class="header-catalog-item"  href="#">Фитнес-браслеты</a>
-        <a class="header-catalog-item"  href="#">Умные часы</a>
+        <a class="header-catalog-item" href="/catalog.html">Фитнес-браслеты</a>
+        <a class="header-catalog-item" href="/catalog.html">Умные часы</a>
       </div>
       <div class="header-catalog-col">
-        <a class="header-catalog-item"  href="#">Квадрокоптеры</a>
+        <a class="header-catalog-item" href="/catalog.html">Квадрокоптеры</a>
       </div>
     </div>
 
@@ -79,7 +79,7 @@
     <section class="slider container">
       <h2 class="visually-hidden">Популярные товары</h2>
 
-      <div class="slide-wrapper">
+      <div class="slide-wrapper slide-show">
         <div class="slide-photo slide-photo-first">
           <img src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
         </div>
@@ -114,7 +114,7 @@
         </div>
       </div>
 
-      <div class="slide-wrapper" style="display: none">
+      <div class="slide-wrapper">
         <div class="slide-photo slide-photo-second">
           <img src="img/slider-2.png" alt="Мотивирующие фитнес-браслеты" width="345" height="485">
         </div>
@@ -141,7 +141,7 @@
         </div>
       </div>
 
-      <div class="slide-wrapper" style="display: none">
+      <div class="slide-wrapper">
         <div class="slide-photo slide-photo-third">
           <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
         </div>
@@ -190,34 +190,34 @@
     <section class="categories container">
       <h2 class="visually-hidden">Категории товаров</h2>
       <div class="categories-list">
-        <a href="#">
+        <a href="/catalog.html">
           <div class="category-img category-img-vr"></div>
           <p>Виртуальная реальность</p>
         </a>
-        <a href="#">
+        <a href="/catalog.html">
           <div class="category-img category-img-selfie"></div>
           <p>Моноподы<br>для селфи</p>
         </a>
-        <a href="#">
+        <a href="/catalog.html">
           <div class="category-img category-img-actioncam"></div>
           <p>Экшн-камеры</p>
         </a>
-        <a href="#">
+        <a href="/catalog.html">
           <div class="category-img category-img-fitnessbracelet"></div>
           <p>Фитнес-браслеты</p>
         </a>
-        <a href="#">
+        <a href="/catalog.html">
           <div class="category-img category-img-smartwatch"></div>
           <p>Умные часы</p>
         </a>
-        <a href="#">
+        <a href="/catalog.html">
           <div class="category-img category-img-drone"></div>
           <p>Квадрокоптеры</p>
         </a>
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
       <h2 class="visually-hidden">Услуги</h2>
       <div class="services-bg"></div>
       <div class="services-wrapper container">
@@ -238,15 +238,15 @@
           </ul>
         </div>
         <div class="services-desc">
-          <div class="services-desc-item services-desc-item-delivery">
+          <div class="services-desc-item services-desc-item-show services-desc-item-delivery">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
-          <div class="services-desc-item services-desc-item-warranty" style="display: none">
+          <div class="services-desc-item services-desc-item-warranty">
             <h3>Гарантия</h3>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </div>
-          <div class="services-desc-item services-desc-item-credit" style="display: none">
+          <div class="services-desc-item services-desc-item-credit">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </div>
@@ -295,7 +295,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="contacts-top-wrapper">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
@@ -316,7 +316,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-row">
-        <a href="#">
+        <a>
           <img src="img/logo-yellow.svg" alt="Device" width="163" height="35">
         </a>
         <ul class="site-nav footer-site-nav footer-row">
@@ -335,13 +335,13 @@
         <p>г. Москва, ул. Строителей, 15</p>
         <ul class="services-nav footer-row">
           <li>
-            <a href="#">Доставка</a>
+            <a href="#services">Доставка</a>
           </li>
           <li>
-            <a href="#">Гарантия</a>
+            <a href="#services">Гарантия</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a href="#contacts">Контакты</a>
           </li>
         </ul>
         <p>Тел.: +7 (495) 495-95-95</p>
@@ -349,9 +349,9 @@
       <div class="footer-row">
         <div class="footer-bar"></div>
         <ul class="socials">
-          <li class="socials-fb"><a href="#" aria-label="Facebook"></a></li>
-          <li class="socials-vk"><a href="#" aria-label="Instagram"></a></li>
-          <li class="socials-tw"><a href="#" aria-label="Tweeter"></a></li>
+          <li class="socials-fb"><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"></a></li>
+          <li class="socials-vk"><a href="https://vk.com/" target="_blank" aria-label="Instagram"></a></li>
+          <li class="socials-tw"><a href="https://twitter.com/" target="_blank" aria-label="Tweeter"></a></li>
         </ul>
         <a class="socials-html" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="html academy"></a>
       </div>
@@ -385,7 +385,6 @@
 
   <section class="pop-up pop-up-map">
     <h2 class="visually-hidden">Карта</h2>
-    <img src="img/map-big.png" alt="Наш офис находится по адресу Москва, улица Строителей, дом 15" width="960" height="560">
     <div class="map-ya">
       <a class="map-ya-link1" href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps">Москва</a>
       <a class="map-ya-link2" href="https://yandex.ru/maps/213/moscow/house/ulitsa_stroiteley_15/Z04YcwVpT0ADQFtvfXp5d3VrYQ==/?ll=37.529786%2C55.686348&utm_medium=mapframe&utm_source=maps&z=16.65">Улица Строителей, 15 — Яндекс Карты</a>
@@ -395,6 +394,12 @@
       <span class="visually-hidden">Закрыть</span>
     </button>
   </section>
+
+<script src="scripts/header-menu-min.js"></script>
+<script src="scripts/slider-min.js"></script>
+<script src="scripts/services-min.js"></script>
+<script src="scripts/pop-up-map-min.js"></script>
+<script src="scripts/pop-up-contact-min.js"></script>
 
 </body>
 </html>

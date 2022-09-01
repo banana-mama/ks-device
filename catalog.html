@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize-min.css">
+  <link rel="stylesheet" type="text/css" href="css/style-min.css">
 </head>
 
 <body>
@@ -47,31 +47,32 @@
       </div>
       <ul class="services-nav header-row">
         <li class="services-nav-delivery">
-          <a href="#">Доставка</a>
+          <a href="/#services">Доставка</a>
         </li>
         <li class="services-nav-warranty">
-          <a href="#">Гарантия</a>
+          <a href="/#services">Гарантия</a>
         </li>
         <li class="services-nav-contacts">
-          <a href="#">Контакты</a>
+          <a href="/#contacts">Контакты</a>
         </li>
       </ul>
     </nav>
 
     <div class="header-catalog container">
       <div class="header-catalog-col">
-        <a class="header-catalog-item" href="#">Виртуальная реальность</a>
-        <a class="header-catalog-item"  href="#">Моноподы для селфи</a>
-        <a class="header-catalog-item"  href="#">Экшн-камеры</a>
+        <a class="header-catalog-item" href="/catalog.html">Виртуальная реальность</a>
+        <a class="header-catalog-item" href="/catalog.html">Моноподы для селфи</a>
+        <a class="header-catalog-item" href="/catalog.html">Экшн-камеры</a>
       </div>
       <div class="header-catalog-col">
-        <a class="header-catalog-item"  href="#">Фитнес-браслеты</a>
-        <a class="header-catalog-item"  href="#">Умные часы</a>
+        <a class="header-catalog-item" href="/catalog.html">Фитнес-браслеты</a>
+        <a class="header-catalog-item" href="/catalog.html">Умные часы</a>
       </div>
       <div class="header-catalog-col">
-        <a class="header-catalog-item"  href="#">Квадрокоптеры</a>
+        <a class="header-catalog-item" href="/catalog.html">Квадрокоптеры</a>
       </div>
     </div>
+
   </header>
 
   <main>
@@ -132,7 +133,7 @@
                     <div class="double-range-input-slider">
                         <div class="slider-track"></div>
                         <input type="range" min="0" max="10000" value="0" id="slider-1" name="cost-from" oninput="slideOne()">
-                        <input type="range" min="0" max="10000" value="5000" id="slider-2" name="cost-to" oninput="slideTwo()">
+                        <input type="range" min="0" max="10000" value="10000" id="slider-2" name="cost-to" oninput="slideTwo()">
                     </div>
                     <div class="double-range-input-values">
                         <span id="range1">от 0</span>
@@ -192,8 +193,8 @@
                     </label>
                   </p>
                   <p>
-                    <label class="radiobutton radiobutton-disabled">
-                      <input type="radio" name="bluetooth" value="no" disabled>
+                    <label class="radiobutton">
+                      <input type="radio" name="bluetooth" value="no">
                       <span class="radiobutton-marker"></span>
                       <span class="radiobutton-label">Нет</span>
                     </label>
@@ -290,7 +291,7 @@
                 <a href="#">Назад</a>
               </div>
               <div class="pagination-page">
-                <a active>1</a>
+                <a class="active">1</a>
                 <a href="#">2</a>
                 <a href="#">3</a>
               </div>
@@ -307,14 +308,12 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-row">
-        <a href="#">
+        <a>
           <img src="img/logo-yellow.svg" alt="Device" width="163" height="35">
         </a>
         <ul class="site-nav footer-site-nav footer-row">
-
-          <li class="site-nav-user site-nav-login">
-            <a href="#">Валентин Петухов</a>
-            <a class="site-nav-logout" href="#">Выйти</a>
+          <li class="site-nav-login">
+            <a href="#">Войти</a>
           </li>
           <li class="site-nav-compare">
             <a href="#">Сравнить</a>
@@ -328,13 +327,13 @@
         <p>г. Москва, ул. Строителей, 15</p>
         <ul class="services-nav footer-row">
           <li>
-            <a href="#">Доставка</a>
+            <a href="/#services">Доставка</a>
           </li>
           <li>
-            <a href="#">Гарантия</a>
+            <a href="/#services">Гарантия</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a href="/#contacts">Контакты</a>
           </li>
         </ul>
         <p>Тел.: +7 (495) 495-95-95</p>
@@ -342,14 +341,17 @@
       <div class="footer-row">
         <div class="footer-bar"></div>
         <ul class="socials">
-          <li class="socials-fb"><a href="#" aria-label="Facebook"></a></li>
-          <li class="socials-vk"><a href="#" aria-label="Instagram"></a></li>
-          <li class="socials-tw"><a href="#" aria-label="Tweeter"></a></li>
+          <li class="socials-fb"><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"></a></li>
+          <li class="socials-vk"><a href="https://vk.com/" target="_blank" aria-label="Instagram"></a></li>
+          <li class="socials-tw"><a href="https://twitter.com/" target="_blank" aria-label="Tweeter"></a></li>
         </ul>
         <a class="socials-html" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="html academy"></a>
       </div>
     </div>
   </footer>
-  <script src="scripts/double-slider.js"></script>
+
+  <script src="scripts/double-slider-min.js"></script>
+  <script src="scripts/header-menu-min.js"></script>
+
 </body>
 </html>
